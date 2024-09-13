@@ -29,6 +29,89 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    
+
+    <style>
+
+  
+  
+        .card-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              max-width: 1200px;
+            }
+        
+            .card {
+              background: #ffffff;
+              border-radius: 15px;
+              padding: 40px;
+              margin-bottom: 0px;
+              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              width: 100%;
+              max-width: 900px; /* Set a maximum width for the cards */
+              position: relative;
+              overflow: hidden;
+              text-align: center; /* Center the content */
+              margin-top: 50px;
+            }
+        
+            .card:hover {
+              transform: translateY(-15px);
+              box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+            }
+        
+            .card h2 {
+              font-size: 30px;
+              color: #333;
+              margin-bottom: 20px;
+              transition: color 0.3s ease;
+            }
+        
+            .card p {
+              font-size: 18px;
+              color: #666;
+              line-height: 1.8;
+            }
+        
+            .card:hover h2 {
+              color: #007bff;
+            }
+        
+            .card::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: -100%;
+              width: 100%;
+              height: 5px;
+              background: #007bff;
+              transition: 0.3s ease;
+            }
+        
+            .card:hover::before {
+              left: 0;
+            }
+        
+            @media (max-width: 768px) {
+              .card {
+                padding: 30px;
+              }
+        
+              .card h2 {
+                font-size: 26px;
+              }
+        
+              .card p {
+                font-size: 16px;
+              }
+            } 
+            </style>
 </head>
 
 <body>
@@ -39,14 +122,16 @@
     <!-- Spinner End -->
 
 
+   
+
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Office 602, Liberty House Tower, Al Sukouk Street - Trade Centre – DIFC – Dubai – UAE.</small>
                     <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@Giamn.com </small>
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
@@ -63,28 +148,28 @@
     <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
+    <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+                <h1 class="m-0">Gia Management</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
-                    <div class="nav-item dropdown">
+                    <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                         <div class="dropdown-menu m-0">
                             <a href="blog.html" class="dropdown-item">Blog Grid</a>
                             <a href="detail.html" class="dropdown-item">Blog Detail</a>
                         </div>
-                    </div>
-                    <div class="nav-item dropdown">
+                    </div> -->
+                    <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
                             <a href="price.html" class="dropdown-item">Pricing Plan</a>
@@ -93,13 +178,14 @@
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             <a href="quote.html" class="dropdown-item">Free Quote</a>
                         </div>
-                    </div>
+                    </div> -->
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a>
+                <a href="" class="btn btn-primary py-2 px-4 ms-3">Phone number</a>
             </div>
         </nav>
+
 
         <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
             <div class="row py-5">
@@ -141,10 +227,15 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
                         <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">The Best IT Solution With 10 Years of Experience</h1>
+                        <h1 class="mb-0">Turning Vision into Success</h1>
                     </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <div class="row g-0 mb-3">
+                    <p class="mb-4">Gia Management was founded by Marwan Mohammad, a seasoned business professional with over a decade of experience across diverse industries. With a background in business economics and a career that spans finance, technology, global trade, and energy, Marwan has built Gia Management to provide expert consulting services for startups and established businesses alike.<br><br>
+
+                        Gia Management works with a vast network of highly skilled professionals from around the world. This diverse group brings expertise across finance, operations, marketing, and more, allowing Gia Management to offer clients tailored solutions for their unique business needs. 
+                        </p>
+                        
+                        
+                        <!-- <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
@@ -153,8 +244,8 @@
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
                         </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                    </div> -->
+                    <!-- <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
@@ -162,7 +253,7 @@
                             <h5 class="mb-2">Call to ask any question</h5>
                             <h4 class="text-primary mb-0">+012 345 6789</h4>
                         </div>
-                    </div>
+                    </div> -->
                     <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
@@ -176,8 +267,55 @@
     <!-- About End -->
 
 
-    <!-- Team Start -->
+
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+               
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">About Marwan Mohammad- Founder & CEO of GIA Management</h5>
+                        <h1 class="mb-0"> </h1>
+                    </div>
+                    <p class="mb-4">Marwan Mohammad holds a degree in Business Economics from the University of Jordan, where he graduated with distinction. His early career began as a foreign exchange dealer at a financial brokerage firm, where he simultaneously established several startups in the tech and fintech fields. His entrepreneurial spirit and deep industry knowledge led him to participate and compete as the youngest participant in a Jordanian government tender to develop a centralized taxation system.
+                        Over the years, Marwan has played pivotal roles in various industries, from electronics manufacturing to global trade and renewable energy. He has held director-level positions in companies like Enrocks, Opti Energy, and Opti Trading, where he gained significant expertise in business development and investment strategy. After a successful corporate career, Marwan decided to establish Gia Management to continue his passion for helping companies grow, leveraging his skills and experience on a global scale.
+                        
+                        </p>
+                    <!-- <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
+                        </div>
+                    </div> -->
+                    <!-- <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                        </div>
+                    </div> -->
+                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
@@ -237,12 +375,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
 
     <!-- Vendor Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5 mb-5">
             <div class="bg-white">
                 <div class="owl-carousel vendor-carousel">
@@ -258,20 +396,93 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Vendor End -->
-    
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="section-title text-center position-relative pb-3 mb-5">
+        <h5 class="fw-bold text-primary text-uppercase">Case Study</h5>
+        <h1 class="mb-0">Turning Vision into Success</h1>
+    </div>
+    <center>
+            <div class="card-container">
+              <div class="card">
+                <h2>MellBell Electronics: From Idea to Global Reach</h2>
+                <p>MellBell Electronics approached Gia Management with an innovative concept: the world’s
+                    smallest Arduino board, called Pico. They had the idea, but they needed help turning it into a
+                    reality and reaching a global market.
+                    How We Helped:
+                    Gia Management worked closely with MellBell Electronics to launch a Kickstarter campaign,
+                    providing strategic advice on how to market the product and connect with potential backers.
+                    Our team helped refine the business plan, streamline the production process, and create a
+                    funding strategy. The results were remarkable—MellBell exceeded their sales target by 4x
+                    and secured $100,000 in pre-seed funding.
+                    Outcome:
+                    With our support, MellBell Electronics sold over 1,200 units across 50+ countries and gained
+                    global recognition. We helped them grow from an idea to a thriving business with a solid
+                    foundation for future growth. https://www.kickstarter.com/projects/melbel/pico-the-worlds-
+                    smallest-arduino-board use this link as a source of the work..</p>
+              </div>
+              <div class="card">
+                <h2>Smart Dust Technologies: Innovating Supply Chain Tracking</h2>
+                <p>Smart Dust Technologies came to Gia Management with a vision to create a pharmaceutical
+                    tracking system that would provide real-time data on product movement and demand. They
+                    had the technical idea but needed guidance to turn it into a functional business model and
+                    secure investment.
+                    How We Helped:
+                    Gia Management assisted Smart Dust Technologies by refining their product development
+                    roadmap and creating a viable business strategy. We supported them through the process of
+                    developinga prototype then few Minimum Viable Products (MVPs) and connected them with
+                    industry experts to ensure the product met market needs. Additionally, we helped secure
+                    pre-seed investment through Shamal Start.
+                    Outcome:
+                    Smart Dust Technologies successfully launched their tracking system MVP. With our
+                    guidance, they secured the necessary funding and created a clear path to reach an end
+                    product.</p>
+              </div>
+              <div class="card">
+                <h2>Recom Solar Trading: Entering the Renewable Energy Market</h2>
+                <p>Recom Solar Trading wanted to break into the renewable energy market with their solar
+                    panels and inverters, but they needed support navigating certification processes and building
+                    market relationships.
+                    How We Helped:
+                    Gia Management stepped in to guide Recom Solar through the DEWA certification process,
+                    ensuring their products met the necessary standards. We also helped them establish key
+                    partnerships with vendors and distributors in the region, setting the stage for market entry.
+                    Outcome:
+                    With our assistance, Recom Solar Trading successfully obtained their DEWA product
+                    certifications and formed strong vendor partnerships. They are now a recognized player in
+                    the Middle Easts renewable energy sector.</p>
+              </div>
+              <div class="card">
+                <h2>Enrocks Investments: Strategic Financial Modeling for Renewable Energy</h2>
+                <p>Enrocks Investments needed detailed financial models to evaluate renewable energy
+                    projects in Europe. They had several opportunities but required clear, data-driven insights to
+                    make informed investment decisions.
+                    How We Helped:
+                    Gia Management worked with Enrocks to develop comprehensive financial models, which
+                    allowed them to assess the viability of various renewable energy projects. We provided them
+                    with tools to understand their maximum debt financing capacity and projected cash flows,
+                    enabling them to plan their investments strategically.
+                    Outcome:
+                    With the financial models we provided, Enrocks was able to make informed decisions on
+                    their renewable energy investments. The company is now moving forward with multiple
+                    projects, thanks to the clarity and precision of our financial guidance.</p>
+              </div>
+            </div>
+        </center>
+    
+<!-- Footer Start -->
+       <!-- Footer Start -->
+       <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-6 footer-about">
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                         <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+                           <h1 class="m-0 text-white"></i>Gia Management</h1>
                         </a>
-                        <p class="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
+                        <p class="mt-3 mb-4">We specialize in helping businesses grow, optimize operations, and scale effectively. Reach out to us for expert guidance tailored to your unique needs. Let’s build a successful future together.
+                            </p>
                         <form action="">
                             <div class="input-group">
                                 <input type="text" class="form-control border-white p-3" placeholder="Your Email">
@@ -288,11 +499,11 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">123 Street, New York, USA</p>
+                                <p class="mb-0"> Office 602, Liberty House Tower, Al Sukouk Street - Trade Centre – DIFC – Dubai – UAE.</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">info@giamn.com </p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
@@ -307,28 +518,39 @@
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Quick Links</h3>
+                                <h3 class="text-light mb-0"> Important Links</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Contact Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Terms and Conditions</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Privacy Policy</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
+                                <h3 class="text-light mb-0"> Startups</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Idea to Business</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Business Structure Setup</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Operational Efficiency</a>
+                                <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Scaling</a> -->
+                                <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Financial Modeling</a> -->
+                                <!-- <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a> -->
+                            </div>
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Established Firms</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Operational Improvement</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Financial Forecasting</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>	Expansion Strategy</a>
+                                <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
                                 <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a> -->
                             </div>
                         </div>
                     </div>
@@ -341,10 +563,10 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. 
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Gia</a>. All Rights Reserved. 
 						
 						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+						Designed by <a class="text-white border-bottom" href="">Tecnavis</a></p>
                     </div>
                 </div>
             </div>
